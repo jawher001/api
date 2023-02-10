@@ -7,11 +7,11 @@ import { UserList } from './components/UserList';
 function App() {
   return (
     <div className="App">
-   <UserList/>
-  {/* <Routes>
+   
+  <Routes>
     <Route path='/' element={<UserList/>} />
-    <Route path= "`/$`" element={<Details/>} />
-  </Routes> */}
+    <Route path= '/:id' element={<Details/>} />
+  </Routes>
     </div>
   );
 }

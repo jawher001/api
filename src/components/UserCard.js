@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function UserCard({e}) {
@@ -9,7 +10,9 @@ function UserCard({e}) {
           <td>{e.username}</td>
           <td>{e.email}</td>
           <td>{e.phone}</td>
-          {/* <td><button style={{color:"green"}}>See Details</button></td> */}
+          <Link to={`/${e.id}`}>
+          <td><button style={{color:"green"}}>See Details</button></td>
+          </Link>
         </tr>
    
   );
